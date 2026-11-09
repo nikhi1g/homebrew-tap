@@ -14,3 +14,12 @@ signed, notarized releases are published.
 The current cask is a test-channel artifact. The production release workflow
 publishes Gatekeeper-clean artifacts after Developer ID and notarization
 credentials are configured.
+
+## iterm-cli
+
+```bash
+brew install nikhi1g/tap/iterm-cli
+iterm guide
+```
+
+Builds `iterm` from the tagged source of [iterm-cli](https://github.com/nikhi1g/iterm-cli).
