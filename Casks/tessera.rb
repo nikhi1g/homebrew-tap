@@ -1,6 +1,6 @@
 cask "tessera" do
-  version "0.5.1"
-  sha256 "414892d2d8d1017ad57474a8033b848e5ec3603399652b3407bbab87af7a6e14"
+  version "0.6.0"
+  sha256 "3d1e10138f2edb9c8dd4216f020e1ed187235adb2fb4a5b37c56a1d8111d0347"
 
   url "https://2nikhilg.com/download/Tessera-#{version}.dmg"
   name "Tessera"
