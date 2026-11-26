@@ -1,6 +1,6 @@
 cask "tessera" do
-  version "0.6.0"
-  sha256 "3d1e10138f2edb9c8dd4216f020e1ed187235adb2fb4a5b37c56a1d8111d0347"
+  version "0.9.2"
+  sha256 "de88e4786b9c94cb67096973a7024d63208a2a32be73e9bc31191042e47f4a32"
 
   url "https://2nikhilg.com/download/Tessera-#{version}.dmg"
   name "Tessera"
@@ -16,6 +16,10 @@ cask "tessera" do
   depends_on macos: :sonoma
 
   app "Tessera.app"
+  binary "#{appdir}/Tessera.app/Contents/MacOS/tessera"
 
-  zap trash: "~/Library/Preferences/com.2nikhilg.tessera.plist"
+  zap trash: [
+    "~/Library/Application Support/Tessera",
+    "~/Library/Preferences/com.2nikhilg.tessera.plist",
+  ]
 end
